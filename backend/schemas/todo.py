@@ -8,6 +8,5 @@ class TodoSchema(ma.SQLAlchemyAutoSchema):
         model = Todo
         load_instance = True
 
-# Instantiate schema objects
 todo_schema = TodoSchema()
 todos_schema = TodoSchema(many=True)
